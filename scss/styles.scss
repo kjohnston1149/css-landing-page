@@ -1,6 +1,122 @@
 $color: 	#d36154;
 
-h1 {
-  color: $color;
-  background-color: orange;
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: salmon;
+  border: 5px solid rgba(233,127,103,0.95);
+  color: white;
+  font-size: 0.85em;
+  display: block;
+  margin: auto;
+  top: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.header {
+  background-image: url("https://d2rdrr51ez8te0.cloudfront.net/hero-posters/fields.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 50vh;
+  width: 100%;
+}
+
+.header > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.header > p {
+  color: white;
+  position: absolute;
+  font-style: italic;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.nav-bar {
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-bar h4 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline-block;
+  float: right;
+  margin: 20px;
+}
+
+.title > h1 {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  display: block;
+  width: 100%;
+  font-size: 6rem;
+  color: white;
+}
+
+.title > h2 {
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 950px;
+  color: white;
+  border-bottom: solid white 3px;
+  font-size: 3rem;
+}
+
+.body {
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+.detail-tile {
+  display: inline-block;
+  position: relative;
+}
+
+.icon-circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  float: left;
+  border-radius: 50%;
+  margin: 40px;
+  border: solid black 3px;
+}
+
+.icon-circle > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 150px;
 }
